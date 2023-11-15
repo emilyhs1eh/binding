@@ -1,0 +1,18 @@
+body{
+    font-size: var(--font-size);
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+    max-width: 35rem;
+    background-color: var(--color);
+}
+
+h1, h2, h3, h4{
+    font-family: var(--font-display);
+}
+
+p{
+    font-size: var(--p-font-size);
+    margin-top: var(--mt-spacing);
+    margin-bottom: var(--mb-spacing);
+}
+

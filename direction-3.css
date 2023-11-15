@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,600&family=Noto+Color+Emoji&family=Urbanist&display=swap');
+
+hr {
+    border: none;
+    height: 2px;
+    background: #FF5733; 
+    margin: 30px 0;
+}
+
+/* body variables */
+:root {
+    --font-display: 'Urbanist';
+    --spacing: 20px;
+    --color: black; 
+}
+
+body {
+    margin: 10px;
+    padding: 15;
+    color: white;
+}
+
+/* h1 variables */
+
+
+h1 {
+    font-family: 'Bodoni Moda';
+    font-size: 22px; 
+    margin-top: 200px;
+    font-weight: 100;
+    color: white; 
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+/* h2 variables */
+h2 {
+    font-family: 'Bodoni Moda';
+    font-weight: 500;
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 60px; 
+    line-height: 1.5; 
+    color: #FF5733; 
+    text-align: left;
+}
+
+/* h3 variables */
+h3 {
+    font-family: 'Bodoni Moda';
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px; 
+}
+
+/* h4 variables */
+h4 {
+    font-family: 'Bodoni Moda';
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px; 
+    margin-bottom: 30px;
+}
+
+/* p variables */
+:root {
+    --p-font-size: 18px; 
+    --mt-spacing: 25px; 
+    --mb-spacing: 20px; 
+}
+
+p {
+    font-family: 'Urbanist';
+    line-height: 26px;
+    font-weight: 300;
+}
+
+/* blockquotes variables */
+blockquote {
+    font-family: 'Bodoni Moda';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px; 
+    color: whitesmoke;
+    border-left: 5px solid #FF5733; 
+    border-right: 5px solid #FF5733; 
+    border-radius: 8px;
+    padding: 15px;
+    margin-right: 20px;
+}
