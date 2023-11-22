@@ -2,7 +2,6 @@ body{
     font-size: var(--font-size);
     padding-left: var(--spacing);
     padding-right: var(--spacing);
-    max-width: 35rem;
     background-color: var(--color);
 }
 
