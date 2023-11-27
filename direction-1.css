@@ -123,22 +123,48 @@ blockquote {
   font-size: --var(--blockquote);
   padding: 20px 20px 20px 20px;
   max-width: 600px;
-  align-items: center;
+  display: flex;
 }
 
   
-.stacked {
-    border: solid 3px red;
+.red-border {
+    border: solid 3px #DA0000;
     padding: 20px 15px 20px 15px;
   }
 
-
-.symbol{
+.red-symbol {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
-}
+    color: #DA0000;
+  }
+
+.yellow-border {
+    border: solid 3px #FFD700;
+    padding: 20px 15px 20px 15px;
+  }
+
+.yellow-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+  }
+
+.blue-border {
+    border: solid 3px #0000FE;
+    padding: 20px 15px 20px 15px;
+  }
+
+.blue-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0000FE;
+  }
+
+
+
 
 
 .numbered-heading {
@@ -478,7 +504,8 @@ a{
     h5{
         margin-left: 10%;
     }
-    
+
+
     
   
 
