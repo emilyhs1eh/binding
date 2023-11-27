@@ -1,49 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,800;1,6..12,600;1,6..12,800;1,6..12,900&family=Nunito:ital,wght@0,300;0,400;0,500;1,700;1,900&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
 
 /* body styling */
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body{
     font-family: 'Manrope';
-    background-color: #F5F5F5;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 20px;
+    margin: 18px;
+    max-width: 35rem;
+    
 }
 
 /* nav styling */
 
 nav {
-    text-decoration: none;
-    list-style: none;
-    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
     position: sticky;
-    top: 10px;
+    top: 0;
     z-index: 1000;
-    width: 100%; 
-    font-size: --var(--nav);
+    color: #F5F5F5;
 }
 
 nav a {
     text-decoration: none;
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     border-radius: 20%; 
-    background-color: #F5F5F5; 
-    color: #000; 
-    border: 1px solid #000; /
+    color: #F5F5F5; 
+    border: 1px solid #000; 
 }
+
+nav a:hover {
+    color: #F5F5F5;
+ }
+ 
+ nav li:nth-child(1) a:hover {
+   color: #DA0000;
+   font-size: 1.2em;
+ }
+ 
+ nav li:nth-child(2) a:hover {
+     color: #FFD700;
+     font-size: 1.2em;
+ }
+ 
+ nav li:nth-child(3) a:hover {
+    color: #0000FE;
+    font-size: 1.2em;
+ }
+ 
 
 nav ul {
     padding: 0;
     margin: 0;
-    text-align: right; 
+    text-align: right;  
 }
 
 nav li {
@@ -56,20 +78,23 @@ nav #logo {
 }
 
 
+
 /* text variables for all content */
 :root{
-    --h1: 70px;
-    --h1-line-height: 80px;
-    --h2: 16px;
+    --h1: 40px;
+    --h1-line-height:1.3;
+    --h2: 14px;
     --h2-line-height: 20px;
     --p: 16px;
-    --p-line-helight: 22px;
+    --p-line-helight: 24px;
     --h3: 28px;
     --h3-line-height:30px;
-    --h4: 14px;
-    --h4-line-height: 15px;
+    --h4: 16px;
+    --h4-line-height: 1.5;
     --h5: 20px;
     --h5-line-height: normal;
+    --h6:14px;
+    --h6-line-height: 1.5;
     --nav: 20px;
     --nav-line-height:20px;
     --blockquote: 16px; 
@@ -80,13 +105,10 @@ nav #logo {
 /* blockquotes variables */
 
 body {
-  color: black;
+  color: #CCCCCC;
   font-family: 'Manrope';
 }
 
-.greeting {
-    margin-bottom: 5px;
-}
 
 .wrapper {
   margin: 0 auto;
@@ -96,22 +118,18 @@ body {
 }
 
 blockquote {
-  background: #F5F5F5;
+  background: transparent;
+  color: #000;
   font-size: --var(--blockquote);
   padding: 20px 20px 20px 20px;
-  margin: 30px 30px;
-  width: 70%;
   max-width: 600px;
+  align-items: center;
 }
 
   
 .stacked {
     border: solid 3px red;
-    padding: 20px 30px 20px 30px;
-    box-shadow: 13px 13px 0 0 #F5F5F5,
-                15px 15px 0 0 red,
-                11px 15px 0 0 red,
-                15px 11px 0 0 red;
+    padding: 20px 15px 20px 15px;
   }
 
 
@@ -123,7 +141,6 @@ blockquote {
 }
 
 
-
 .numbered-heading {
     display: flex;
     align-items: center;
@@ -133,25 +150,27 @@ blockquote {
     margin-right: 10px; 
 }
 
-
-h1{
-    font-family: 'Nunito Sans';
-    font-weight: 800;
-    line-height: var(--h1-line-height);
-    font-size: var(--h1);
-    margin-top: 100px;
-    margin-bottom: 40px;
-    text-align: left;
-    position: relative;
-    display: block;
-
+.title-position{
+    margin-right: 495px;
+    margin-left: 40px;
 }
+
 
 /* b variables */
 .title {
-    color: #D14836;
-    font-weight: 800;
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
+
+.title-s {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.title-m {
+    background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+}
 
 .reading-title-01{
     color: #DA0000;
@@ -175,23 +194,25 @@ h1{
   }
 
 
+/* styling */
 
-h2{
-    font-family: 'Nunito Sans';
-    font-weight: 800;
-    line-height: var(--h2-line-height);
-    font-size: var(--h2);
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-
+h1{
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    line-height: var(--h1-line-height);
+    font-size: var(--h1);
+    margin-top: 150px;
+    margin-bottom: 40px;
+    display: block;
 }
 
-p{
-    font-size: var(--p);
-    font-weight: 500;
-    line-height: var(--p-line-height);
-    margin-bottom: 40px;
+h2 {
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    align-items: left; 
+    font-size: var(--h2);
+    line-height: var(--h2-line-height);
+    margin-bottom: 30px;
 }
 
 
@@ -200,7 +221,7 @@ h3{
     font-weight: 800;
     line-height: var(--h3-line-height);
     font-size: var(--h3);
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 h4{
@@ -208,59 +229,56 @@ h4{
     font-weight: 400;
     line-height: var(--h4-line-height);
     font-size: var(--h4);
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-left: 10px;
  
 }
 
 h5{
     font-family: 'Nunito Sans';
     font-weight: 700;
+    background-color: #000;
     line-height: var(--h5-line-height);
     font-size: var(--h5);
+    margin-bottom: 10px;
+}
+
+.line-position{
+    margin-left: 10%;
+}
+
+
+
+
+h6{
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    line-height: var(--h6-line-height);
+    font-size: var(--h6);
     margin: 0; 
     padding: 10px;
+    align-self: flex-start;
 
 }
+
 
 article {
-    margin-top: 70px; 
+    margin-top: 50px; 
 }
 
-section {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    border-bottom: 1px solid #F5F5F5; 
-    background-color: #F5F5F5;
-}
 
-hr {
-    margin: 0; 
-}
 
 p {
-    margin-top: 20px; /
+    font-family: 'Manrope';
+    margin-top: 5px; 
+    font-size: var(--p);
+    line-height: var(--p-line-height);
+    font-weight: 400;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+    color: #F5F5F5;
+
 }
 
-
-
-.next {
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 50%; 
-    padding: 10px 15px; 
-    text-decoration: none;
-    color: black;
-    width: 35px;
-    height: 35px;
-    font-size: 10px; 
-  }
-
-.next:hover {
-    background-color: #d14836;
-    color: white;
-  }
 
 a.next { 
     float: right; 
@@ -273,23 +291,17 @@ a.next {
     justify-content: space-between; 
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background: black;
-    margin: 10px 0; 
-}
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px; 
-    border-top: 1px solid black; 
+    border-top: 0px solid black; 
+    margin-top: 100px;
 }
 
-.left-text,
-.right-text {
+.left-text,.right-text {
     margin: 0;
     padding: 0;
 }
@@ -302,23 +314,184 @@ hr {
     padding-right: 10px;
 }
 
+.right-position{
+    margin-left: 700px;
+    margin-right:40px;
+}
 
+.left-position{
+    margin-left: 50px;
+    margin-right: 850px;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-content {
+    text-align: left;
+}
+
+
+
+
+    
 /* desktop media query */
-@media (min-width: 768px) {
+@media (min-width: 768px){
+
+    body{
+        max-width: 100%;
+        margin:30px;
+        size: 0.9em;
+    
+    }
+
     :root {
-        --h1: 120px;
-        --h1-line-height: auto;
-        --h2: 22px;
+        --h1: 8vh;
+        --h1-line-height: 100px;
+        --h2: 14px;
         --h2-line-height: normal;
-        --p: 22px;
-        --p-line-helight: 27px;
-        --h3: 30px;
-        --h3-line-height:35px;
-        --h4: 22px;
+        --p: 20px;
+        --p-line-helight: 150%;
+        --h3: 22px;
+        --h3-line-height: 35px;
+        --h4: 14px;
         --h4-line-height: normal;
-        --h5: 30px;
-        --h5-line-height: normal;
+        --h5: 22px;
+        --h5-line-height: 40px;
+        --h6: 16px;
+        --h6-line-height:25px;
         --nav: 20px;
         --nav-line-height:20px;
-        --blockquote:22px;
+        --blockquote:22px;Z
+        
     }
+
+   
+    /* Homepage Hover effect */
+    a.hover-color-1:hover,
+    a.hover-color-2:hover,
+    a.hover-color-3:hover {
+    transform: scale(1.3);
+    font-size: 30px;
+    transition: font-size 0.3s, color 0.3s;
+    margin-bottom: 20px;
+    }
+   
+    /* Hover color for the first link */
+    a.hover-color-1:hover {
+    color: #DA0000; 
+    }
+  
+    /* Hover color for the second link */
+    a.hover-color-2:hover {
+    color: #FFD700;
+    }
+  
+     /* Hover color for the third link */
+    a.hover-color-3:hover {
+        color: #0000FE;
+    }
+
+    /* Context right styling */
+    .content-container {
+        display: flex;
+        flex-direction: wrap;
+        gap: 25px;  
+    }
+
+    .content-box {
+        flex: 1 1 calc(50% - 20px);
+        padding: 10px;
+        margin-bottom:20px;
+        
+    }
+
+
+    /* Header styling */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-items: left;
+        padding: 20px;
+        position: fixed;
+        width: 50%;
+        height: 90vh;
+        overflow: auto;
+        flex-direction: column;
+    }
+
+    main {
+        margin-left: 50%;
+        margin-top: 100px;
+    }
+
+    .align-text{
+        margin-top: 10px;
+        padding-top: 30px;
+        text-align: left;
+        margin-right: 55%;
+        margin-left: 10%;
+        
+    }
+
+    .p-align{
+        margin-right: 10%;
+        margin-left: 10%;
+        color: #F5F5F5;
+        margin-top: 30px;
+        
+    }
+
+    blockquote {
+        margin: 30px 30px;
+      }
+
+    .stacked {
+        border: solid 3px red;
+        padding: 20px 30px 20px 30px;
+        box-shadow: 13px 13px 0 0 red,
+                    15px 15px 0 0 red,
+                    11px 15px 0 0 red,
+                    15px 11px 0 0 red;
+      }
+
+    h5{
+        margin-left: 10%;
+    }
+    
+    
+  
+
+
+
+
+    
+    
+
+
+    
+   
+
+
+    
+
