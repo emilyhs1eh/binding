@@ -79,7 +79,9 @@ nav a#logo {
     text-align: left;
 }
 
+
 /* Colophon Button style */
+
 a#c-button{
     margin-left:10px;
     font-size: 16px;
@@ -242,6 +244,13 @@ blockquote p {
 
 .reading-title-03{
     color: #0000FE;
+    font-weight: 800;
+    font-size: 50px;
+    margin-right: 20px;
+  }
+
+.reading-title-04{
+    color: black;
     font-weight: 800;
     font-size: 50px;
     margin-right: 20px;
