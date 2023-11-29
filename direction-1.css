@@ -31,15 +31,15 @@ nav {
     top: 0;
     color: black;
     text-align: left;
+    font-family: 'Manrope';
+    font-size: var(--nav);
 }
 
 nav a {
     text-decoration: none;
     display: inline-block;
     padding: 10px;
-    /* border-radius: 20%; */
     color: black; 
-   /*  border: 1px solid #000; */
     text-align: left; 
 }
 
@@ -72,10 +72,28 @@ nav li {
     margin-left: 10px; 
 }
 
-nav #logo {
-   margin-right: auto;
+nav a#logo {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    text-align: left;
 }
 
+/* Colophon Button style */
+a#c-button{
+    margin-left:10px;
+    font-size: 16px;
+    font-family: 'Manrope';
+    margin-top: 5px;
+    margin-bottom: 70px;
+    transition: color 0.3s ease;
+}
+
+a#c-button:hover {
+    color: #8f00ff;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 
 
 
@@ -95,7 +113,7 @@ nav #logo {
     --h5-line-height: normal;
     --h6:14px;
     --h6-line-height: 1.5;
-    --nav: 20px;
+    --nav: 16px;
     --nav-line-height:20px;
     --blockquote: 16px; 
     --h7:60px;
@@ -115,7 +133,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 95%;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   padding-top: 30px;
 }
 
@@ -251,7 +269,7 @@ h1{
 }
 
 h2 {
-    font-family: 'PT Serif';
+    font-family: 'Manrope';
     font-weight: 600;
     align-items: left; 
     font-size: var(--h2);
@@ -304,7 +322,7 @@ h6{
     line-height: var(--h6-line-height);
     font-size: var(--h6);
     align-self: flex-start;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     margin-top: 30px;
     color: #333333;
 
@@ -404,6 +422,7 @@ em{
     color:#333333;
 }
 
+
 /* symbol color */
 .red {
     color: #DA0000;
@@ -428,10 +447,10 @@ p.p-align {
 footer {
     background-color: transparent; 
     color: black; 
-    font-family:"PT Sans";
+    font-family:"Manrope";
     font-size: 14px;
-    padding-top: 10px;
-    margin-top: 30px;
+    padding-top: 20px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     border-top: 0.5px solid;
@@ -478,7 +497,7 @@ footer {
         --h2: 18px;
         --h2-line-height: normal;
         --p: 22px;
-        --p-line-helight: 1.2;
+        --p-line-helight: 1.4;
         --h3: 30px;
         --h3-line-height: 35px;
         --h4: 20px;
@@ -487,7 +506,7 @@ footer {
         --h5-line-height: 40px;
         --h6: 22px;
         --h6-line-height:1.4;
-        --nav: 22px;
+        --nav: 18px;
         --nav-line-height:20px;
         --blockquote:22px;
     }
@@ -533,7 +552,10 @@ footer {
     }
 
     
-
+    /* Nav styling */
+    Nav {
+        font-size: var(--nav);
+    }
 
     /* Header styling */
     header {
@@ -552,7 +574,8 @@ footer {
     main {
         margin-left: 50%;
         margin-top: 100px;
-        margin-right: 110px; 
+        margin-right: 80px; 
+        padding-left: 40px;
     }
 
     .align-text{
@@ -562,7 +585,12 @@ footer {
         margin-right: 55%;
         margin-left:100px
     }
+    
 
+    p{
+        line-height: var(--p-line-height);
+        font-size: var(--p);
+    }
 
     .p-align{
         color: black;
@@ -589,14 +617,15 @@ footer {
 
 
     .title-styling{
-        font-size: 190px;
+        font-size: 180px;
         margin-left: 100px;
         margin-top:60px;
         font-family: "PT Serif";
         font-weight: 700;
-        line-height: 170px;
-        letter-spacing: 1.0rem;
+        line-height: 160px;
+        letter-spacing: 0.9rem;
     }
+
 
     h3{
         margin-top: 40px;
@@ -607,12 +636,12 @@ footer {
     }
 
     h5{
-        margin-top: 100px;
+        margin-top: 80px;
         margin-left: 5%;
     }
 
     h6{
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .red-symbol {
@@ -624,10 +653,10 @@ footer {
       }
 
     .yellow-symbol {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFD700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFD700;
     }
 
     .blue-symbol {
@@ -636,6 +665,16 @@ footer {
         align-items: center;
         color: #0000FE;
       }
+
+    /* Colophon Button style */
+    a#c-button{
+    margin-top: 20px;
+    margin-left:100px;
+    font-size: 28px;
+    font-family: 'Manrope';
+    transition: color 0.3s ease;
+}
+
 
     /* footer styling */
 
@@ -650,8 +689,68 @@ footer {
     justify-content: space-between;
     border-top: 0.5px solid;
 }
+}
 
+
+
+
+
+
+/* tablet media query */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        max-width: 100%;
+        margin: 20px;
+        font-size: 0.8em; 
+    }
+
+    :root {
+        --h1: 50px; 
+        --h2: 16px; 
+        --p: 20px; 
+        --h3: 24px; 
+        --h4: 18px; 
+        --h5: 24px; 
+        --h6: 18px; 
+        --nav: 18px; 
+        --blockquote: 18px; 
+    }
+
+    .title-styling{
+        font-size: 100px;
+        margin-left: 80px;
+        margin-top:50px;
+        font-family: "PT Serif";
+        font-weight: 700;
+        line-height: 90px;
+        letter-spacing: 1.0rem;
+    }
+
+    /* Homepage Hover effect */
+    a.hover-color-1:hover,
+    a.hover-color-2:hover,
+    a.hover-color-3:hover {
+        transform: scale(1.1);
+        font-size: 24px; 
+        transition: font-size 0.3s, color 0.3s;
+        margin-bottom: 15px; 
+    }
+
+
+    main {
+        margin-left: 50%;
+        margin-top: 80px;
+        margin-right: 30px;
 
 }
+}
+
+   
+
+
+
+
+
 
 
