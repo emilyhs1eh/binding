@@ -80,7 +80,7 @@ nav a#logo {
 }
 
 
-/* Colophon Button style */
+/* colophon button style */
 
 a#c-button{
     margin-left:10px;
@@ -100,6 +100,7 @@ a#c-button:hover {
 
 
 /* text variables for all content */
+
 :root{
     --h1: 36px;
     --h1-line-height:1.2;
@@ -125,12 +126,6 @@ a#c-button:hover {
 
 
 /* blockquotes variables */
-
-body {
-  color: #cccccce6;
-  font-family: 'PT Sans';
-  font-weight: 700;
-}
 
 .wrapper {
   margin: 0 auto;
@@ -174,7 +169,6 @@ blockquote p {
                 15px 11px 0 0 #FFD700;
   }
 
-
 .blue-symbol {
     display: none;
 }
@@ -213,6 +207,7 @@ blockquote p {
 
 
 /* b variables */
+
 .title {
     display: inline-block;
     background-clip: text;
@@ -288,7 +283,6 @@ h2 {
     color: #333333;
 }
 
-
 h3{
     font-family:'PT Serif';
     font-weight: 800;
@@ -324,7 +318,6 @@ h5{
     margin-left: 10%;
 }
 
-
 h6{
     font-family: 'PT Serif';
     font-weight: 400;
@@ -340,7 +333,6 @@ h6{
 article {
     margin-top: 50px; 
 }
-
 
 p {
     font-family: 'DM Sans';
@@ -382,12 +374,12 @@ a.next {
     padding-right: 10px;
 }
 
-.right-position{
+.right-position {
     margin-left: 700px;
     margin-right:40px;
 }
 
-.left-position{
+.left-position {
     margin-left: 50px;
     margin-right: 850px;
 }
@@ -422,7 +414,7 @@ a.hover-color-1:hover {
     font-size: 14px; 
 }
 
-.align-text{
+.align-text {
     margin-left: 10px;
     margin-right: 10px;     
 }
@@ -433,6 +425,7 @@ em{
 
 
 /* symbol color */
+
 .red {
     color: #DA0000;
 }
@@ -453,39 +446,36 @@ p.p-align {
 
 
 /* footer styling */
+
 footer {
     background-color: transparent; 
-    color: black; 
     font-family:"Manrope";
     font-size: 14px;
     padding-top: 20px;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+}
+
+.line {
     border-top: 0.5px solid;
+    color: black; 
 }
 
 
+/* back to top styling */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#rightBottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 
 
@@ -520,8 +510,8 @@ footer {
         --blockquote:22px;
     }
 
-   
-    /* Homepage Hover effect */
+
+    /* homepage hover effect */
     a.hover-color-1:hover,
     a.hover-color-2:hover,
     a.hover-color-3:hover {
@@ -531,22 +521,20 @@ footer {
     margin-bottom: 20px;
     }
    
-    /* Hover color for the first link */
     a.hover-color-1:hover {
     color: #DA0000; 
     }
   
-    /* Hover color for the second link */
     a.hover-color-2:hover {
     color: #FFD700;
     }
   
-     /* Hover color for the third link */
     a.hover-color-3:hover {
         color: #0000FE;
     }
 
-    /* Context right styling */
+
+    /* context right styling */
     .content-container {
         display: flex;
         flex-direction: wrap;
@@ -560,13 +548,12 @@ footer {
         
     }
 
-    
-    /* Nav styling */
-    Nav {
+    /* nav styling */
+    nav {
         font-size: var(--nav);
     }
 
-    /* Header styling */
+    /* header styling */
     header {
         display: flex;
         justify-content: space-between;
@@ -580,6 +567,7 @@ footer {
         flex-direction: column;
     }
 
+    /* styling */
     main {
         margin-left: 50%;
         margin-top: 100px;
@@ -595,7 +583,6 @@ footer {
         margin-left:100px
     }
     
-
     p{
         line-height: var(--p-line-height);
         font-size: var(--p);
@@ -624,7 +611,6 @@ footer {
                     15px 11px 0 0 red;
       }
 
-
     .title-styling{
         font-size: 180px;
         margin-left: 100px;
@@ -634,7 +620,6 @@ footer {
         line-height: 160px;
         letter-spacing: 0.9rem;
     }
-
 
     h3{
         margin-top: 40px;
@@ -675,7 +660,7 @@ footer {
         color: #0000FE;
       }
 
-    /* Colophon Button style */
+    /* colophon button style */
     a#c-button{
     margin-top: 20px;
     margin-left:100px;
@@ -684,19 +669,35 @@ footer {
     transition: color 0.3s ease;
 }
 
-
     /* footer styling */
+
+    .line {
+    border-top: 0.5px solid;
+    color: black; 
+}
+
+    /* back to top styling */
+    #rightBottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
     footer {
     background-color: transparent; 
-    color: black; 
     font-family:"PT Sans";
     font-size: 16px;
     padding-top: 20px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    border-top: 0.5px solid;
+    
 }
 }
 
@@ -736,7 +737,7 @@ footer {
         letter-spacing: 1.0rem;
     }
 
-    /* Homepage Hover effect */
+    /* homepage hover effect */
     a.hover-color-1:hover,
     a.hover-color-2:hover,
     a.hover-color-3:hover {
@@ -746,13 +747,13 @@ footer {
         margin-bottom: 15px; 
     }
 
-
     main {
         margin-left: 50%;
         margin-top: 80px;
         margin-right: 30px;
 
 }
+
 }
 
    
